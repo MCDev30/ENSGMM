@@ -72,7 +72,7 @@ projet.addEventListener('click', (e) => {
         <div class="desc">
             <div class="pro">
                 <img src="palu.png" alt="">
-                <p id="pnama">Modélisation Statistique Sapciale du paludisme en Afrique de l'Ouest</p>
+                <p id="pnama">Modélisation Statistique Spatiale du paludisme en Afrique de l'Ouest</p>
             </div>
             <p id="desc"></p>
         </div>
