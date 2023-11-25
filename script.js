@@ -93,7 +93,7 @@ projet.addEventListener('click', (e) => {
         <div class="desc">
             <div class="pro">
                 <img src="image.jpeg" alt="" >
-                <p id="pnama">Conception d'un système de vote électronique sécurisé et décentralisé basé sur la technologie blockchain</p>
+                <p id="pnama">Conception d'un système de vote électronique basé sur la technologie blockchain</p>
             </div>
             <p id="desc"></p>
         </div>
