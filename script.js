@@ -90,6 +90,20 @@ projet.addEventListener('click', (e) => {
             </div>
             <p id="desc"></p>
         </div>
+        <div class="desc">
+            <div class="pro">
+                <img src="image.jpeg" alt="" >
+                <p id="pnama">Conception d'un système de vote électronique sécurisé et décentralisé basé sur la technologie blockchain</p>
+            </div>
+            <p id="desc"></p>
+        </div>
+        <div class="desc">
+        <div class="pro">
+            <img src="cancer.jpeg" alt="" >
+            <p id="pnama">Breast cancer prediction</p>
+        </div>
+        <p id="desc"></p>
+    </div>
     </div>
 </div>   
     `
@@ -138,4 +152,21 @@ aff2.addEventListener('click', (e) => {
 })
 close.addEventListener('click', (e) => {
     view.classList.remove('see')
+})
+
+const plus = document.getElementById('plus')
+const texte_change = document.getElementById('texte_change')
+const moins = document.querySelector('#moins')
+plus.addEventListener('click', (e) => {
+    e.preventDefault()
+    texte_change.innerHTML = "<b>'LES MATHS, ÇA SERT À QUOI ?'</b> <br><br> L'objectif principal de ces journées, est de démystifier les mathématiques en montrant, à travers des témoignages d'experts et des projets concrets d'étudiants, les innombrables applications de cette discipline dans le monde professionnel. <br><br>En tant que sponsor de cette journée, vous bénéficierez d'une forte visibilité auprès des étudiants et des professionnels présents. Vous pourrez non seulement améliorer votre image de marque auprès des étudiants et professionnels présents, mais également identifier en avant-première les futurs talents qui feront avancer votre secteur. Grâce aux témoignages d'experts et aux projets concrets qui seront présentés, vous réaliserez le rôle central que peuvent jouer les mathématiques et leurs applications infinies dans le développement technologique et économique de demain. <br><br>Votre soutien sera déterminant pour offrir aux participants une journée riche en découvertes. Rejoignez l'aventure et contribuez à inspirer la nouvelle génération de talents en mathématiques !"
+    moins.innerHTML = 'voir moins'
+    plus.innerHTML = ''
+})
+moins.addEventListener('click', (e) => {
+    e.preventDefault()
+    texte_change.innerHTML = "<b>'LES MATHS, ÇA SERT À QUOI ?'</b> <br><br> L'objectif principal de ces journées, est de démystifier les mathématiques en montrant, à travers des témoignages d'experts et des projets concrets d'étudiants, les innombrables applications de cette discipline dans le monde professionnel... "
+    moins.innerHTML = ''
+    plus.innerHTML = 'voir plus'
+
 })
