@@ -36,10 +36,10 @@ gmm.addEventListener('click', (e) => {
                 </td>
             </tr>
             <tr>
-                <td>Modélisation Aléatoire, Statistiques et Finaces</td>
+                <td>Modélisation Aléatoire, Statistiques et Finances</td>
                 <td>
                     <div class="liste">
-                        <li>Banques et fiannces</li>
+                        <li>Banques et finances</li>
                         <li>Modélisation des marchés finaciers</li>
                         <li>Sociétés innovantes</li>
                         <li>Études et conseils techniques</li>
@@ -64,7 +64,7 @@ gmm.addEventListener('click', (e) => {
 
 projet.addEventListener('click', (e) => {
     e.preventDefault()
-    current.innerHTML = "👉🏾 Les projets pour l'événement"
+    current.innerHTML = "👉🏾 Les projets pour l'événement (06)"
     container.innerHTML = ""
     container.innerHTML = `
     <div class="programme">
@@ -93,17 +93,24 @@ projet.addEventListener('click', (e) => {
         <div class="desc">
             <div class="pro">
                 <img src="image.jpeg" alt="" >
-                <p id="pnama">Conception d'un système de vote électronique basé sur la technologie blockchain</p>
+                <p id="pnama">Conception d'un système de vote électronique sécurisé et décentralisé basé sur la technologie blockchain</p>
             </div>
             <p id="desc"></p>
         </div>
         <div class="desc">
-        <div class="pro">
-            <img src="cancer.jpeg" alt="" >
-            <p id="pnama">Breast cancer prediction</p>
+            <div class="pro">
+                <img src="cancer.jpeg" alt="" >
+                <p id="pnama">Breast cancer prediction</p>
+            </div>
+            <p id="desc"></p>
         </div>
-        <p id="desc"></p>
-    </div>
+        <div class="desc">
+            <div class="pro">
+                <img src="serge.jpeg" alt="" >
+                <p id="pnama">Sécurité sociale et guidance professionnelle</p>
+            </div>
+            <p id="desc"></p>
+        </div>
     </div>
 </div>   
     `
@@ -116,6 +123,16 @@ program.addEventListener('click', (e) => {
     container.innerHTML = `
         <div class="programme">
         <p style="margin-bottom: 30px; text-align:center">Recevez les informations sur l'événement, en temps réels</p>
+
+        <div class="info_pro">
+            <div>
+                <img src="important.png" alt="" width="50px">
+            </div>
+            <div>
+                <p id="bold">À l'endroit des porteurs des projets retenus</p>
+                <p>Pour la présentation des projets retenus dans le cadre des journées, un <b>beamer</b> est attendu de chaque groupe ou porteur de projet. Merci de bien vouloir prendre celà en considération</p>
+            </div>
+        </div>
         <div class="view">
             <p id="close">X</p>
             <img id="vue" src="" width="100%">
